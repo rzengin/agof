@@ -1,0 +1,131 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "protocolVersion": "2024-06-01",
+    "serverInfo": {
+      "name": "mcp-astro",
+      "version": "0.1.0"
+    },
+    "capabilities": {
+      "tools": {}
+    }
+  }
+}
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "result": {
+    "tools": [
+      {
+        "name": "astro.getSign",
+        "description": "Returns zodiac sign for an ISO date (YYYY-MM-DD).",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            }
+          },
+          "required": [
+            "date"
+          ]
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "sign": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sign"
+          ]
+        }
+      },
+      {
+        "name": "astro.dailyFortune",
+        "description": "Returns a one-line fortune for a given sign.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "sign": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sign"
+          ]
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "fortune": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "fortune"
+          ]
+        }
+      }
+    ]
+  }
+}
+{
+  "jsonrpc": "2.0",
+  "id": 3,
+  "error": {
+    "code": -32601,
+    "message": "Unknown tool: cmf.consent.status"
+  }
+}
+{
+  "jsonrpc": "2.0",
+  "id": 4,
+  "error": {
+    "code": -32601,
+    "message": "Unknown tool: cmf.consent.grant"
+  }
+}
+{
+  "jsonrpc": "2.0",
+  "id": 5,
+  "error": {
+    "code": -32601,
+    "message": "Unknown tool: cmf.accounts.list"
+  }
+}
+{
+  "jsonrpc": "2.0",
+  "id": 6,
+  "error": {
+    "code": -32601,
+    "message": "Unknown tool: cmf.tx.search"
+  }
+}
+{
+  "jsonrpc": "2.0",
+  "id": 7,
+  "error": {
+    "code": -32601,
+    "message": "Unknown tool: cmf.cashflow.compute"
+  }
+}
+{
+  "jsonrpc": "2.0",
+  "id": 8,
+  "error": {
+    "code": -32601,
+    "message": "Unknown tool: cmf.events.subscribe"
+  }
+}
+{
+  "jsonrpc": "2.0",
+  "id": 9,
+  "error": {
+    "code": -32601,
+    "message": "Unknown tool: cmf.events.emit"
+  }
+}
