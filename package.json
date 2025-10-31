@@ -5,7 +5,10 @@
   "scripts": {
     "start:mcp": "tsx src/mcp-server.ts",
     "start:proxy": "tsx src/mcp-proxy.ts",
-    "dev:client": "tsx src/mcp-client.ts"
+    "start:proxy-of": "tsx src/mcp-proxy-of.ts",
+    "start:client": "tsx src/mcp-client.ts",
+    "start:client-of": "tsx src/mcp-client-of.ts",
+    "start:mcp-of": "tsx src/mcp-server-of.ts"
   },
   "dependencies": {
     "colorette": "^2.0.20",
